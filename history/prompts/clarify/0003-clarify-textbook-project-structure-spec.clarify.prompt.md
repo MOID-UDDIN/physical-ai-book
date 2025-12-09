@@ -7,7 +7,7 @@ surface: agent
 model: claude-sonnet-4-5-20250929
 feature: textbook-project-structure
 branch: master
-user: icon
+user: Icon
 command: /sp.clarify The Physical AI textbook spec lives at specs/1-textbook-project-structure/spec.md for the wrapper repo `physical-ai-book/`. Please review it for ambiguity, missing assumptions, incomplete requirements, and scope conflicts (especially around auth/personalization/Urdu and real hardware). Suggest concrete edits so the spec matches the current structure created in 0002 (Docusaurus app in `book/`, docs in `book/docs/physical-ai/`, RAG backend in `rag-backend/`) and is ready for planning.
 labels: ["spec", "clarification"]
 links:

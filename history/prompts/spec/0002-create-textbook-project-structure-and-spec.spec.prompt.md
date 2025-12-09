@@ -7,7 +7,7 @@ surface: agent
 model: claude-sonnet-4-5-20250929
 feature: textbook-project-structure
 branch: master
-user: icon
+user: Icon
 command: /sp.specify Create the complete empty folder and file structure for the Physical AI & Humanoid Robotics textbook project under the root folder `physical-ai-book`. Do NOT write any chapter content yet — only create all the required files and folders with proper names and paths. Use a Docusaurus v3 (TypeScript) + Spec-Kit Plus structure that works with GitHub Pages deployment. Include a separate folder for a simple RAG backend (FastAPI/Neon/Qdrant). Do NOT add auth, personalization, or Urdu translation bonus pages. After creating the structure, show the full tree.
 labels: ["spec", "structure"]
 links:

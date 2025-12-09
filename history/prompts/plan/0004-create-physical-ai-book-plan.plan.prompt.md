@@ -7,8 +7,8 @@ surface: agent
 model: claude-sonnet-4-5-20250929
 feature: textbook-project-structure
 branch: master
-user: icon
-command: /sp.plan Create an implementation plan for the Physical AI Book project using the structure from 0002 (wrapper repo `physical-ai-book/`, Docusaurus docs in `book/docs/`, RAG backend in `rag-backend/`). Focus only on: (1) the Docusaurus textbook (Intro + 6 chapters in `book/docs/physical-ai`), and (2) a simple RAG backend (FastAPI + Neon + Qdrant + OpenAI) that the site calls. No auth, personalization, or Urdu translation. Save the plan to `specs/1-textbook-project-structure/plan.md`.
+user: Icon
+command: /sp.plan
 labels: ["plan", "architecture"]
 links:
   spec: specs/1-textbook-project-structure/spec.md

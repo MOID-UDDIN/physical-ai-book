@@ -7,8 +7,8 @@ surface: agent
 model: claude-sonnet-4-5-20250929
 feature: textbook-project-structure
 branch: master
-user: icon
-command: /sp.tasks Generate atomic tasks from specs/1-textbook-project-structure/spec.md and specs/1-textbook-project-structure/plan.md for the Physical AI Book project, using the structure from 0002 (wrapper `physical-ai-book/`, Docusaurus app in `book/`, RAG backend in `rag-backend/`). Focus only on: the textbook docs (Intro + 6 chapters under `book/docs/physical-ai/`) and the simple RAG backend (FastAPI + Neon + Qdrant + OpenAI). Break work into 4 phases (setup, content, RAG, testing/deploy). Save tasks to `specs/1-textbook-project-structure/tasks.md`.
+user: Icon
+command: /sp.tasks
 labels: ["tasks", "generation"]
 links:
   spec: specs/1-textbook-project-structure/spec.md

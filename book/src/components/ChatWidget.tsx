@@ -25,20 +25,19 @@ export default function ChatWidget() {
     try {
       console.log("Sending message:", currentInput);
 
-      const res = await fetch(
-        "",
-        {
-          method: "POST",
-          headers: { "Content-Type": "application/json" },
-          body: JSON.stringify({ message: currentInput }),
-        }
-      );
+      const res = await fetch("http://localhost:4000/api/chat", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({ message: currentInput }),
+      });
 
       if (!res.ok) {
         throw new Error(`Server error: ${res.status}`);
       }
 
-      const data = await res.json();
+      const data: { reply?: string; response?: string; message?: string } =
+        await res.json();
+
       console.log("Response received:", data);
 
       const botReply =
@@ -77,7 +76,7 @@ export default function ChatWidget() {
         <div className="chat-box">
           <div className="chat-header">
             <div className="chat-header-main">
-              Physical AI & Humanoid Robotics Tutor
+              Physical AI &amp; Humanoid Robotics Tutor
             </div>
             <div className="chat-header-sub">
               Ask questions about concepts, chapters, or examples.
@@ -89,12 +88,12 @@ export default function ChatWidget() {
               <div className="chat-welcome">
                 👋 Welcome! This assistant is trained for the book
                 <br />
-                <strong>“Physical AI & Humanoid Robotics”</strong>.
+                <strong>“Physical AI &amp; Humanoid Robotics”</strong>.
                 <br />
                 <br />
                 You can ask anything about:
                 <br />
-                 <strong>The Book</strong>
+                <strong>The Book</strong>
               </div>
             )}
 

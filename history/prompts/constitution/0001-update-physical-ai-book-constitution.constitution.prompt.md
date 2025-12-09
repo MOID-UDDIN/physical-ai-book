@@ -7,8 +7,8 @@ surface: agent
 model: claude-sonnet-4-5-20250929
 feature: textbook-project-structure
 branch: master
-user: icon
-command: /sp.constitution Update the project constitution for the "Physical AI Book" (a Docusaurus-based textbook on Physical AI & Humanoid Robotics under the root folder `physical-ai-book`) so that it reflects clear principles for writing, architecture, and safety. Emphasize: (1) Clarity-first, beginner-friendly explanations (no heavy math, concrete examples). (2) Simulation-first robotics practice: focus on ROS 2, simulation tools, and software stack; no real hardware required. (3) Ethical and safe robotics: human-centered thinking, safe operation, and transparency about limitations. (4) Robustness in explanations and code: small, testable examples, reproducible instructions, and careful assumptions. (5) RAG accuracy and honesty: the chatbot must stay grounded in book content, avoid hallucinations, and clearly say "I don't know" when the content is not present in the book. Add sections for "Textbook Scope" (Intro + 6 core chapters only) and "RAG System Principles" (Docusaurus app in `book/` under `physical-ai-book`, RAG backend in `rag-backend` using FastAPI + Neon + Qdrant + OpenAI, no auth/personalization/Urdu features). Update governance so all decisions about content or RAG behavior must respect these principles.
+user: Icon
+command: /sp.constitution
 labels: ["constitution", "update"]
 links:
   spec: specs/1-textbook-project-structure/spec.md
