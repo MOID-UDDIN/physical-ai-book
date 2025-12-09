@@ -25,7 +25,7 @@ export default function ChatWidget() {
     try {
       console.log("Sending message:", currentInput);
 
-      const res = await fetch("http://localhost:4000/api/chat", {
+      const res = await fetch("https://physical-ai-book-5ilz.vercel.app/api/chat", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({ message: currentInput }),
